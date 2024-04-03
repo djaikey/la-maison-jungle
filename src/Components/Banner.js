@@ -6,7 +6,7 @@ function Banner() {
     return (
         <div className="lmj-banner" >
             <img src={logo} alt='Lam maison jungle' className='lmj-logo' />
-            <h1>{title}</h1>
+            <h1 className='lmj-title' >{title}</h1>
         </div>
     )
 }

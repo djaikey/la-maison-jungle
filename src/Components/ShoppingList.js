@@ -13,12 +13,12 @@ function ShoppingList() {
 		<div>
 			<ul>
 				{categories.map((cat) => (
-					<li key={cat}>{cat}</li>
+					<button className="lmj-button" key={cat}>{cat}</button>
 				))}
 			</ul>
 			<ul>
 				{plantList.map((plant) => (
-					<li key={plant.id}>{plant.name} {plant.isBestSale ? <span>🔥</span> : <span>👎</span>}</li>
+					<li key={plant.id}>{plant.name} {(plant.isBestSale || plant.category === "classique") && <span>🔥</span>}</li>
 				))}
 			</ul>
 		</div>

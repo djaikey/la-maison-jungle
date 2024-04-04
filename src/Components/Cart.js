@@ -8,7 +8,7 @@ function Cart() {
 
     return (
         <div className='lmj-cart' >
-            <div>
+            <div className='lmj-close-panier'>
                 <p>Fermer</p>
             </div>
             <h2>Panier</h2>
@@ -18,7 +18,7 @@ function Cart() {
                 <li>Fleurs{flowerPrice}€</li>
             </ul>
 
-            <p>TOTAL{monteraPrice+ivyPrice+flowerPrice}€ </p>
+            <p>TOTAL {monteraPrice+ivyPrice+flowerPrice}€ </p>
         </div>
     ) 
 }

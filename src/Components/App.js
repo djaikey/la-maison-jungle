@@ -15,8 +15,6 @@ function App() {
       </div>
       <Footer />
       
-      <QuestionForm/>
-      
     </div>)
 }
 

@@ -1,18 +1,19 @@
 import { useState } from "react"
+import '../Styles/QuestionFormulaire.css'
 
 function QuestionForm() {
-    const [inputValue, setInputValue] = useState('Posez votre question')
+    const [inputValue, setInputValue] = useState('Entrez votre adresse e-mail')
    
     return (
         
 
-        <div>
+        <div className="form" >
 
-            <textarea
+            <textarea className="text-area"
                 value={inputValue}
                 onChange={(e)=> setInputValue(e.target.value)}
             />
-            <button onClick={()=> alert(inputValue)}>Alertez moi 🚨</button>
+            <button className="form-button" onClick={()=> alert(inputValue)}>Envoyer 🚨</button>
         </div>
 
     )
@@ -21,7 +22,7 @@ function QuestionForm() {
 
 export default QuestionForm 
 
-/* states*/
+/* Event*/
 
 
 function handleSubmit(e) {

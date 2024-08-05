@@ -3,6 +3,7 @@ import Banner from './Banner';
 import Cart from './Cart';
 import ShoppingList from './ShoppingList';
 import Footer from './Footer';
+import QuestionForm from './QuestionForm';
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
         <Cart />
         <ShoppingList />
       </div>
-    <Footer/>
+      <Footer />
+      
+      <QuestionForm/>
+      
     </div>)
 }
 
